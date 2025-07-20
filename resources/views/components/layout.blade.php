@@ -15,7 +15,7 @@
             <a href="/ninjas">
                 All Ninjas
             </a>
-            <a href="/ninjas/create"> {{-- does not exit yet --}}
+            <a href="/ninjas/create">
                 Create New Ninja
             </a>
         </nav>
