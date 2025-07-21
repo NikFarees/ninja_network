@@ -1,5 +1,5 @@
 <x-layout>
-    <form action="" method="">
+    <form action="{{ route('ninjas.store') }}" method="POST">
         @csrf <!-- CSRF token for every form submission for security measure -->
 
         <h2>Create a New Ninja</h2>
