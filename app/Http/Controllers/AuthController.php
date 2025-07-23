@@ -35,5 +35,19 @@ class AuthController extends Controller
 
     public function login()
     {
+
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout(); // Log out the user
+
+        // good practice: clear the session
+        $request->session()->invalidate(); // remove other data in the session
+        $request->session()->regenerateToken(); // regenerate CSRF token
+
+        return redirect()->route('show.login');
+
+
     }
 }
